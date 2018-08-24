@@ -23,7 +23,7 @@
 ########################################################################
 set(QTGUI_MOC_HEADERS
 		inspector_form.h vis3d_vf_form.h)
-QT4_WRAP_CPP(QTGUI_MOC_OUTFILES ${QTGUI_MOC_HEADERS})
+QT5_WRAP_CPP(QTGUI_MOC_OUTFILES ${QTGUI_MOC_HEADERS})
 
 ########################################################################
 # Setup library

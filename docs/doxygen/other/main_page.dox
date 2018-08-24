@@ -17,7 +17,7 @@ To install the Inspector, the following dependencies are required:
 
 - GNU Radio core
 - gr-analog, gr-blocks, gr-channel, gr-filter
-- QT4
+- QT5
 - QWT 6.1.0
 - QwtPlot3D
 - TensorFlow 0.12 ([pip installation](https://www.tensorflow.org/get_started/os_setup#pip_installation) - you need the version for Python 2.7)

@@ -17,10 +17,10 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 
-if(DEFINED __INCLUDED_GR_USEQT4_CMAKE)
+if(DEFINED __INCLUDED_GR_USEQT5_CMAKE)
     return()
 endif()
-set(__INCLUDED_GR_USEQT4_CMAKE TRUE)
+set(__INCLUDED_GR_USEQT5_CMAKE TRUE)
 
 # This file is derived from the default "UseQt4" file provided by
 # CMake.  This version sets the variables "QT_INCLUDE_DIRS",

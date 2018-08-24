@@ -96,7 +96,7 @@ find_package(Boost "1.35" COMPONENTS filesystem system)
 
 find_package(PythonLibs 2)
 include(GrPython)
-GR_PYTHON_CHECK_MODULE("PyQt4" PyQt4 True PYQT4_FOUND)
+GR_PYTHON_CHECK_MODULE("PyQt5" PyQt5 True PYQT5_FOUND)
 
 if(NOT Boost_FOUND)
     message(FATAL_ERROR "Boost required to compile gr-inspector")
@@ -143,13 +143,13 @@ endif(APPLE)
 # Find gnuradio build dependencies
 ########################################################################
 
-#include (cmake/Modules/GrSetupQt4.cmake)
+#include (cmake/Modules/GrSetupQt5.cmake)
 include (cmake/Modules/FindOpenGL.cmake)
 include (cmake/Modules/FindQwtPlot3D.cmake)
 
 find_package(CppUnit)
 find_package(Doxygen)
-find_package(Qt4 4.2.0 COMPONENTS QwtPlot3D QtCore QtGui QtOpenGL REQUIRED)
+find_package(Qt5 4.2.0 COMPONENTS QwtPlot3D QtCore QtGui QtOpenGL REQUIRED)
 find_package(Qwt 6.1.0 REQUIRED)
 
 # Search for GNU Radio and its components and versions. Add any
@@ -165,7 +165,7 @@ if(NOT CPPUNIT_FOUND)
     message(FATAL_ERROR "CppUnit required to compile inspector")
 endif()
 
-include(GrSetupQt4)
+include(GrSetupQt5)
 
 ########################################################################
 # Setup doxygen option

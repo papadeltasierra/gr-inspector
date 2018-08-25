@@ -28,6 +28,8 @@
 #include <QTimer>
 #include <QWidget>
 #include <QtGui/QtGui>
+#include <QGridLayout>
+#include <QCheckBox>
 #include <gnuradio/msg_queue.h>
 
 #include <qwt_plot.h>

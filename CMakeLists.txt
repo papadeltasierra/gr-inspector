@@ -17,6 +17,14 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 
+variable_watch(QT_GUI_FOUND)
+variable_watch(QT_QTGUI_FOUND)
+variable_watch(QT_CORE_FOUND)
+variable_watch(QT_QTCORE_FOUND)
+variable_watch(QT5_CORE_FOUND)
+variable_watch(QT5_QTCORE_FOUND)
+
+
 ########################################################################
 # Project setup
 ########################################################################
@@ -149,7 +157,8 @@ include (cmake/Modules/FindQwtPlot3D.cmake)
 
 find_package(CppUnit)
 find_package(Doxygen)
-find_package(Qt5 4.2.0 COMPONENTS QwtPlot3D QtCore QtGui QtOpenGL REQUIRED)
+# find_package(Qt5 4.2.0 COMPONENTS QwtPlot3D QtCore QtGui QtOpenGL REQUIRED)
+find_package(Qt5 5.11.0 COMPONENTS Core Gui OpenGL REQUIRED)
 find_package(Qwt 6.1.0 REQUIRED)
 
 # Search for GNU Radio and its components and versions. Add any

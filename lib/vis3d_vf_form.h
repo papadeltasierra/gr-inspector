@@ -27,6 +27,9 @@
 #include <QTimer>
 #include <QWidget>
 #include <QtGui/QtGui>
+#include <QMainWindow>
+#include <QGridLayout>
+#include <QPushButton>
 #include <gnuradio/msg_queue.h>
 #include <qwt3d_surfaceplot.h>
 #include <qwt3d_function.h>
